@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ananda.casheer.RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Register\nAccount"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/text"
+        android:fontFamily="@font/ofbold"
+        android:textSize="35sp" />
+    <TextView
+        android:id="@+id/register_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello user, you have\na greatful journey"
+        android:layout_marginHorizontal="25dp"
+        android:textColor="@color/text"
+        android:fontFamily="@font/ofregular"
+        android:textSize="28sp"
+        android:layout_below="@id/register_text"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:layout_below="@id/register_text2"
+        android:background="@drawable/bg_edittext"
+        android:paddingStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:fontFamily="@font/ofregular"
+        android:textColor="@color/black"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:layout_below="@id/editName"
+        android:background="@drawable/bg_edittext"
+        android:paddingStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="16sp"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/ofregular"
+        android:textColor="@color/black"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:layout_below="@id/editEmail"
+        android:background="@drawable/bg_edittext"
+        android:paddingStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:fontFamily="@font/ofregular"
+        android:textColor="@color/black"
+        android:hint="Password"/>
+
+    <Spinner
+        android:id="@+id/spinnerRole"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_below="@id/editPassword"
+        android:entries="@array/roles"
+        android:background="@drawable/bg_edittext"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="26dp"
+        android:hint="save"
+        android:textSize="18sp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/bg_button"
+        android:layout_below="@id/spinnerRole"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

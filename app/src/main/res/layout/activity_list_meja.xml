@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ananda.casheer.view.list.ListMejaActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/PrimaryColor">
+        <ImageButton
+            android:id="@+id/buttonAdd"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/add"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+        <ImageButton
+            android:id="@+id/btn_backRight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_left"
+            android:rotation="180"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMeja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"/>
+
+</RelativeLayout>

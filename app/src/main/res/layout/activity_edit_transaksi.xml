@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ananda.casheer.view.edit.EditTransaksiActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/PrimaryColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Transaksi"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/ofmedium"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:text="Nama Pelanggan"
+        android:textColor="@color/text"
+        android:fontFamily="@font/ofmedium"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/namaPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Nomor Meja"
+        android:fontFamily="@font/ofmedium"
+        android:textColor="@color/text"
+        android:textSize="20sp"/>
+    <Spinner
+        android:id="@+id/spinnerMeja"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_edittext"/>
+    <CheckBox
+        android:id="@+id/dibayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Dibayar"
+        android:textColor="@color/text"
+        android:fontFamily="@font/ofmedium"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="simpan"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button"/>
+
+</LinearLayout>

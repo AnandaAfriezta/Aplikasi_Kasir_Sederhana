@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="16dp"
+    app:cardCornerRadius="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/namaItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Nama"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+            android:fontFamily="@font/ofmedium"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/hargaItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Rp9999999"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:fontFamily="@font/ofregular"
+            android:layout_below="@id/namaItem"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

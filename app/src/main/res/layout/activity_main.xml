@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    tools:context="com.ananda.casheer.view.main.MainActivity">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets Sign you in"
+        android:fontFamily="@font/ofbold"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/text"
+        android:textSize="37sp"
+        />
+    <TextView
+        android:id="@+id/login_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back ,\nYou have been missed"
+        android:fontFamily="@font/ofregular"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@color/text"
+        android:textSize="28sp"
+        android:layout_below="@id/login_text"
+        />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingStart="10sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ofregular"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:maxLines="1"
+        android:layout_below="@+id/editEmail"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:paddingStart="10sp"
+        android:hint="Password"
+        android:fontFamily="@font/ofregular"
+        android:inputType="textPassword"/>
+    
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Login"
+        android:textSize="16sp"
+        android:background="@drawable/bg_button"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/ofmedium"
+        android:layout_below="@+id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Register"
+        android:textSize="16sp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/ofmedium"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

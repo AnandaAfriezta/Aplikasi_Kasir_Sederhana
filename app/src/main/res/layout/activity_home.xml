@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    tools:context="com.ananda.casheer.home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/frame"/>
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't Wanna Make \nYou Have A Bad Day"
+            android:fontFamily="@font/ofsemibold"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/text"
+            />
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our job is delivering a delicious food\nwith fast , free delivery and easy."
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/ofmedium"/>
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/bg_button"
+            android:hint="Get Started"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/ofsemibold"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

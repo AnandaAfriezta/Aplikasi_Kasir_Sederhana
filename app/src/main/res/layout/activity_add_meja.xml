@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ananda.casheer.view.add.AddMejaActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/PrimaryColor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Meja"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/ofmedium"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:text="Nama Meja"
+        android:fontFamily="@font/ofmedium"
+        android:textSize="24sp"
+        android:textColor="@color/text"/>
+    <EditText
+        android:id="@+id/inputNamaMeja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"/>
+    <Button
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/ofmedium"
+        android:id="@+id/buttonSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="simpan"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
